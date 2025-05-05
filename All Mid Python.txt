@@ -1,0 +1,261 @@
+#file open 
+
+import os
+file_name = "mydata.txt"
+if os.path.exists(file_name):
+    file=open("mydata.txt","a")
+else:
+    file=open("mydata.txt","x")
+file.close()
+
+#Read from file
+
+file = open("studentData.txt","r")
+
+for record in file:
+    print(record)
+
+file.close()
+
+
+
+
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+print(thislist[1])
+
+mytuple = ("apple", "banana", "cherry")
+print(thistuple)
+print(thistuple[1])
+
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+for x in thisset:
+  print(x)
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+print(thisdict["brand"])
+
+
+
+
+
+
+
+name = input("Enter your full name: ")
+# name = "Aizaz Khalid"
+rollno = int (input("Enter your Roll no: "))
+# rollno = 154
+cnic =int(input("Enter your CNIC without dashes: ") )
+
+# cnic = 1730172626849
+gpa = float(input('Enter your gpa: '))
+# gpa = 3.61
+
+studentData=[name,rollno,cnic,gpa]
+# name = studentData[0]
+# rollno = studentData[1]
+# cnic = studentData[2]
+# gpa = studentData[3]
+
+# qry = f'''
+# Name of candidate: {name}
+# Roll no. of candidate: {rollno}
+# CNIC of candidate: {cnic}
+# Gpa of candidate: {gpa}
+# '''
+
+# print (qry)
+
+print(studentData)
+
+writeFile = open ("abc.txt","a")
+writeFile.write (str(studentData))
+writeFile.close()
+
+# studentData = open ("abc.txt","a")
+
+vehicles = [1,2]
+colors= [3,4]
+for vehicle in vehicles:
+  for color in colors:
+    print(vehicle, color)
+
+products = ['ball', 'gloves']
+colors = ['red', 'blue']
+for i in products :
+  for j in colors:
+    print(j, i)
+
+
+grades = [70,60,50,34,5,67,6,7,655,66,90]
+for grade in grades:
+  if grade <= 50:
+    continue
+  print(grade)
+
+word = 'vehicle'
+print(word.find())
+
+cart =["milk", "tea", "jam"]
+print(cart)
+characters = "!#- ?"
+print(characters[4])
+colors = ['red', 'green', 'blue', 'yellow']
+print(colors[2:3])
+color = 'pink'
+print(color[1:4])
+planets = ['Mercury', 'Venus', 'Earth', 'Mars']
+print(planets[2:3])
+
+players = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank"]
+
+#Create 3 lists with 2 players each
+#Use slicing to create a list for Group 1
+g1 = players[0:2]
+
+#Use slicing to create a list for Group 2
+g2 = players[2:4]
+
+#Use slicing to create a list for Group 3
+g3 = players[4:6]
+
+print("Group 1:")
+#display the 1st group
+print(g1)
+
+print("Group 2:")
+#display the 2nd group
+print(g2)
+
+print("Group 3:")
+#display the 3rd group
+print(g3)
+
+vehicle = 'motorbike'
+print(vehicle[:])
+
+c = ['$', '£', '€', '¥']
+print(c[1:-1])
+
+s = "PythonProgramming"
+print(s[0:6])
+print(s[6:])
+print(s[::-1])
+
+
+
+# Write a Python program to reverse a string.
+# Write a program to check if a given string is a palindrome.
+
+my_str = input("String : ")
+rev_str =""
+
+counter = len(my_str)-1
+while counter>=0:
+    rev_str+=my_str[counter]
+    # print(my_str[counter])
+    counter -= 1
+
+print(f"Reversed string : {rev_str}")
+
+#To check if string is a palindrome
+
+if my_str.strip() == rev_str.strip() :
+    print ("Palindrome")
+else:
+    print("not Palindrome")
+
+
+# Write a program to count the number of vowels in a given string.
+
+# a = "Aizaz Khalid"
+a = input("Enter a string to count vowels in string : ")
+# strings are arrays
+vowels=0
+for i in a.lower():
+    # print(i)
+    if i == "a" or i=="e" or i=="i" or i=="o" or i=="u":
+        vowels+=1
+    
+print("vowels = "+ str(vowels))
+
+
+# Write a program to calculate the sum of all even numbers between 1 and 50.
+even_Sum=0
+for i in range(50):
+    i = i+1
+    
+    if i % 2 == 0 :
+        even_Sum += i
+        
+print("sum of all even numbers between 1 and 50 : ",even_Sum)
+
+
+# Write a program to print numbers from 1 to 100 but skip multiples of 5
+
+myvar = 0
+print("Printing 1 - 100 & skipping multiple of 5")
+for i in range  (100):
+    i = i+1
+    if i % 5 != 0 :
+        print(i)
+    else:
+        print(f"Here is multiple of 5 -> {i}")
+
+
+# Write a Python program to print the multiplication table of a given number.
+
+number = int (input("ENTER NUMBER : "))
+
+for i in range(10):
+    ttl=number*(i+1)
+    print(f"{number} * {i+1} = {ttl}")
+
+
+
+# Write a Python program to find the largest of three numbers.
+
+var1=int(input("Enter 1st Number : "))
+var2=int(input("Enter 2nd Number : "))
+var3=int(input("Enter 3rd Number : "))
+
+if var1 > var2 and var1>var3:
+    print(f"{var1} is Greater than {var2} & {var3}")
+elif var2 > var1 and var2>var3:
+    print(f"{var2} is Greater than {var1} & {var3}")
+else:
+    print(f"{var3} is Greater than {var1} & {var2}")
+
+
+# Write a program that takes an integer as input and checks whether it is odd or even.
+
+var1=int(input("Enter an Integer to check wether it's odd or even : "))
+
+if var1 % 2 == 0:
+    print("Even")
+else:
+    print("odd")
+
+# Write a Python program to swap two variables.
+
+myvar1 = 30
+myvar2 = 50
+print(f"Before Swapping \nvariable 1 = {myvar1}\nvariable 2 = {myvar2}")
+temp = 0
+temp = myvar1
+myvar1 = myvar2
+myvar2 = temp
+print("After Swapping")
+print(f"variable 1 = {myvar1}\nvariable 2 = {myvar2}")

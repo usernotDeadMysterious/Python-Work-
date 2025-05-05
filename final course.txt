@@ -1,0 +1,18 @@
+Python Course:
+Basic Concepts and Syntax
+Variables
+Data Types
+Operators
+List
+Set
+Tuple
+Dictionaries
+If-Else
+For Loop/While Loop
+Function
+Lambda Function
+Database Connectivity with following Queries
+Insert
+Delete
+Update
+Select
