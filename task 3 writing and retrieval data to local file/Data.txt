@@ -1,0 +1,3 @@
+Name : AIZAZ KHALID , Roll no. : 154 , Python : 90 , Psycology : 85 , Distriuted & Parallel Computing : 87 , Digital Image Processing : 92 , Final year Project 1 : 95 , Obtained Marks : 449 , Total Marks : 500 , Percentage : 89.8 
+Name : MUZAMIL RAHMAN , Roll no. : 143 , Python : 85 , Psycology : 87 , Distriuted & Parallel Computing : 90 , Digital Image Processing : 92 , Final year Project 1 : 81 , Obtained Marks : 435 , Total Marks : 500 , Percentage : 87.0 
+Name : SAMAD ROMAN , Roll no. : 210 , Python : 80 , Psycology : 90 , Distriuted & Parallel Computing : 70 , Digital Image Processing : 99 , Final year Project 1 : 85 , Obtained Marks : 424 , Total Marks : 500 , Percentage : 84.8 
